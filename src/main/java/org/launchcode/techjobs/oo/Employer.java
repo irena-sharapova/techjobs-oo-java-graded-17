@@ -19,7 +19,6 @@ public class Employer {
     }
 
     // Custom toString, equals, and hashCode methods:
-
     @Override
     public String toString() {
         return value;
@@ -39,7 +38,6 @@ public class Employer {
     }
 
     // Getters and Setters:
-
     public int getId() {
         return id;
     }
