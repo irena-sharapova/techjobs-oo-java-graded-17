@@ -11,10 +11,10 @@ public class JobTest {
     //TODO: Create your unit tests here
     @Test
     public void testSettingJobId(){
-        Object obj1 = new Object();
-        Object obj2 = new Object();
+        Job obj1 = new Job();
+        Job obj2 = new Job();
 
-        assertNotEquals(System.identityHashCode(obj1), System.identityHashCode(obj2), "Object IDs should be distinct");
+        assertNotEquals(obj1.getId(), obj2.getId());
     }
 
     @Test
@@ -33,6 +33,14 @@ public class JobTest {
         assertEquals("Quality control", myJob.getPositionType().getValue());
         assertEquals("Persistence", myJob.getCoreCompetency().getValue());
 
+    }
+
+    @Test
+    public void testJobsForEquality() {
+        Job myJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        Job myJob2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+        assertNotEquals(myJob1, myJob2);
     }
 
 
