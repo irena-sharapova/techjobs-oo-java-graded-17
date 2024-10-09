@@ -96,4 +96,7 @@ public class Job {
         return Objects.hash(id);
     }
 
+    @Override
+    public String toString()
+
 }
