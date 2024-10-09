@@ -6,11 +6,13 @@ import javax.print.attribute.standard.JobName;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.testng.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotEquals;
+
 
 public class JobTest {
 
     //TODO: Create your unit tests here
+    //Test1
     @Test
     public void testSettingJobId() {
         Job obj1 = new Job();
@@ -19,6 +21,7 @@ public class JobTest {
         assertNotEquals(obj1.getId(), obj2.getId());
     }
 
+    //Test 2
     @Test
     public void testJobConstructorSetsAllFields() {
         Job myJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
@@ -37,6 +40,7 @@ public class JobTest {
 
     }
 
+    //Test 3
     @Test
     public void testJobsForEquality() {
         Job myJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
@@ -45,6 +49,7 @@ public class JobTest {
         assertNotEquals(myJob1, myJob2);
     }
 
+    //Test 4
     @Test
     public void testToStringStartsAndEndsWithNewLine() {
         String newLine = System.lineSeparator();
@@ -56,37 +61,38 @@ public class JobTest {
     }
 
 
+    //Test 5
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
         String newLine = System.lineSeparator();
-        String line = "_______";
 
         Job myJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String expectedResult1 = newLine +
-                "ID: " + myJob1.getId() + " " + line + newLine +
-                "Name: " + myJob1.getName() + " " + line + newLine +
-                "Employer: " + myJob1.getEmployer().getValue() + " " + line + newLine +
-                "Location: " + myJob1.getLocation().getValue() + " " + line + newLine +
-                "PositionType: " + myJob1.getPositionType().getValue() + " " + line + newLine +
-                "CoreCompetency: " + myJob1.getCoreCompetency().getValue() + " " + line + newLine;
+                "ID: " + myJob1.getId() + newLine +
+                "Name: " + myJob1.getName() + newLine +
+                "Employer: " + myJob1.getEmployer().getValue() + newLine +
+                "Location: " + myJob1.getLocation().getValue() + newLine +
+                "PositionType: " + myJob1.getPositionType().getValue() + newLine +
+                "CoreCompetency: " + myJob1.getCoreCompetency().getValue() + newLine;
         assertEquals(expectedResult1, myJob1.toString());
 
     }
 
 
+    //Test 6
     @Test
     public void testToStringHandlesEmptyField() {
         String newLine = System.lineSeparator();
-        String line = "_______";
 
         Job myJob2 = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
         String expectedResult2 = newLine +
-                "ID: " + myJob2.getId() + " " + line + newLine +
-                "Name: Data not available" + line + newLine +
-                "Employer: Data not available " + line + newLine +
-                "Location: Data not available " + line + newLine +
-                "PositionType: Data not available " + line + newLine +
-                "CoreCompetency: Data not available " + line + newLine;
+                "ID: " + myJob2.getId()  + newLine +
+                "Name: Data not available" + newLine +
+                "Employer: Data not available" + newLine +
+                "Location: Data not available"  + newLine +
+                "Position Type: Data not available"  + newLine +
+                "Core Competency: Data not available"  + newLine;
+
         assertEquals(expectedResult2, myJob2.toString());
     }
 

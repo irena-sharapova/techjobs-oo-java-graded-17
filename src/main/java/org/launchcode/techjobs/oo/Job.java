@@ -99,15 +99,49 @@ public class Job {
     @Override
     public String toString() {
         String newLine = System.lineSeparator();
-        String line = "_______";
+
+        String jobName;
+        if (name.isEmpty()) {
+            jobName = "Data not available";
+        } else {
+            jobName = name;
+        }
+
+        String jobEmployer;
+        if (employer.getValue().isEmpty()) {
+            jobEmployer = "Data not available";
+        } else {
+            jobEmployer = employer.getValue();
+        }
+
+        String jobLocation;
+        if (location.getValue().isEmpty()) {
+            jobLocation = "Data not available";
+        } else {
+            jobLocation = location.getValue();
+        }
+
+        String jobPositionType;
+        if (positionType.getValue().isEmpty()) {
+           jobPositionType = "Data not available";
+        } else {
+            jobPositionType = positionType.getValue();
+        }
+
+        String jobCoreCompetency;
+        if (coreCompetency.getValue().isEmpty()) {
+            jobCoreCompetency = "Data not available";
+        } else {
+            jobCoreCompetency = coreCompetency.getValue();
+        }
 
         return newLine +
-                "ID: " + id + " " + line + newLine +
-                "Name: " + name + line + newLine +
-                "Employer: " + employer + line + newLine +
-                "Location: " + location + line + newLine +
-                "PositionType: " + positionType + line + newLine +
-                "CoreCompetency: "  + coreCompetency + line + newLine;
+                "ID: " + id + newLine +
+                "Name: " + jobName + newLine +
+                "Employer: " + jobEmployer + newLine +
+                "Location: " + jobLocation + newLine +
+                "Position Type: " + jobPositionType + newLine +
+                "Core Competency: "  + jobCoreCompetency + newLine;
 
     }
 
