@@ -47,23 +47,28 @@ public class JobTest {
 
     @Test
     public void testToStringStartsAndEndsWithNewLine() {
+        String newLine = System.lineSeparator();
+        Job myJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String jobString = myJob1.toString();
 
+        assertTrue(jobString.startsWith(newLine));
+        assertTrue(jobString.endsWith(newLine));
     }
 
 
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
-        String newline = System.lineSeparator();
+        String newLine = System.lineSeparator();
         String line = "_______";
 
         Job myJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        String expectedResult1 = newline +
-                "ID: " + myJob1.getId() + " " + line + newline +
-                "Name: " + myJob1.getName() + " " + line + newline +
-                "Employer: " + myJob1.getEmployer().getValue() + " " + line + newline +
-                "Location: " + myJob1.getLocation().getValue() + " " + line + newline +
-                "PositionType: " + myJob1.getPositionType().getValue() + " " + line + newline +
-                "CoreCompetency: " + myJob1.getCoreCompetency().getValue() + " " + line + newline;
+        String expectedResult1 = newLine +
+                "ID: " + myJob1.getId() + " " + line + newLine +
+                "Name: " + myJob1.getName() + " " + line + newLine +
+                "Employer: " + myJob1.getEmployer().getValue() + " " + line + newLine +
+                "Location: " + myJob1.getLocation().getValue() + " " + line + newLine +
+                "PositionType: " + myJob1.getPositionType().getValue() + " " + line + newLine +
+                "CoreCompetency: " + myJob1.getCoreCompetency().getValue() + " " + line + newLine;
         assertEquals(expectedResult1, myJob1.toString());
 
     }
@@ -71,17 +76,17 @@ public class JobTest {
 
     @Test
     public void testToStringHandlesEmptyField() {
-        String newline = System.lineSeparator();
+        String newLine = System.lineSeparator();
         String line = "_______";
 
         Job myJob2 = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
-        String expectedResult2 = newline +
-                "ID: " + myJob2.getId() + " " + line + newline +
-                "Name: Data not available" + line + newline +
-                "Employer: Data not available " + line + newline +
-                "Location: Data not available " + line + newline +
-                "PositionType: Data not available " + line + newline +
-                "CoreCompetency: Data not available " + line + newline;
+        String expectedResult2 = newLine +
+                "ID: " + myJob2.getId() + " " + line + newLine +
+                "Name: Data not available" + line + newLine +
+                "Employer: Data not available " + line + newLine +
+                "Location: Data not available " + line + newLine +
+                "PositionType: Data not available " + line + newLine +
+                "CoreCompetency: Data not available " + line + newLine;
         assertEquals(expectedResult2, myJob2.toString());
     }
 

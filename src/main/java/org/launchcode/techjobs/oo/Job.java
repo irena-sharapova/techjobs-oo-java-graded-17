@@ -97,6 +97,18 @@ public class Job {
     }
 
     @Override
-    public String toString()
+    public String toString() {
+        String newLine = System.lineSeparator();
+        String line = "_______";
+
+        return newLine +
+                "ID: " + id + " " + line + newLine +
+                "Name: " + name + line + newLine +
+                "Employer: " + employer + line + newLine +
+                "Location: " + location + line + newLine +
+                "PositionType: " + positionType + line + newLine +
+                "CoreCompetency: "  + coreCompetency + line + newLine;
+
+    }
 
 }
