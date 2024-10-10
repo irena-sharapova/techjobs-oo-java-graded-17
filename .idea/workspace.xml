@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 5 add 3 tests and part toString method">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 6 Add JobField">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +70,7 @@
     "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Run",
     "Gradle.TestTaskFive.executor": "Run",
     "Gradle.TestTaskFour.executor": "Run",
+    "Gradle.TestTaskSix.executor": "Run",
     "Gradle.TestTaskThree.executor": "Run",
     "Gradle.TestTaskTwo.executor": "Run",
     "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
@@ -83,7 +83,7 @@
     "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TestTaskFive">
+  <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -98,30 +98,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="JobTest.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringContainsCorrectLabelsAndData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -156,30 +132,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringStartsAndEndsWithNewLine&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="TestTaskFive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,6 +156,54 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TestTaskSix" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskSix&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'org.launchcode.techjobs.oo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="JobTest" type="JUnit" factoryName="JUnit">
       <module name="techjobs-oo-java17-graded.test" />
       <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
@@ -216,19 +216,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.JobTest" />
-      <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
-      <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="Gradle.TestTaskFive" />
+      <item itemvalue="Gradle.TestTaskSix" />
+      <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestTaskFive" />
+        <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
         <item itemvalue="Gradle.JobTest" />
+        <item itemvalue="Gradle.TestTaskSix" />
+        <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
-        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
-        <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +289,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728484859099</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Task 5 add 3 tests and toString method">
+      <option name="closed" value="true" />
+      <created>1728503365082</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728503365082</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Task 6 Add JobField">
+      <option name="closed" value="true" />
+      <created>1728523620313</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728523620313</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -299,6 +315,8 @@
     <MESSAGE value="Task 4 add three tests" />
     <MESSAGE value="Task 5 add two tests" />
     <MESSAGE value="Task 5 add 3 tests and part toString method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 5 add 3 tests and part toString method" />
+    <MESSAGE value="Task 5 add 3 tests and toString method" />
+    <MESSAGE value="Task 6 Add JobField" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 6 Add JobField" />
   </component>
 </project>

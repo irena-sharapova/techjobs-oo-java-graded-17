@@ -72,8 +72,8 @@ public class JobTest {
                 "Name: " + myJob1.getName() + newLine +
                 "Employer: " + myJob1.getEmployer().getValue() + newLine +
                 "Location: " + myJob1.getLocation().getValue() + newLine +
-                "PositionType: " + myJob1.getPositionType().getValue() + newLine +
-                "CoreCompetency: " + myJob1.getCoreCompetency().getValue() + newLine;
+                "Position Type: " + myJob1.getPositionType().getValue() + newLine +
+                "Core Competency: " + myJob1.getCoreCompetency().getValue() + newLine;
         assertEquals(expectedResult1, myJob1.toString());
 
     }
